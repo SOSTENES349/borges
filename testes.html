@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autarquia de Trânsito e Transporte Urbano do Recife</title>
+  <link rel="stylesheet" href="inicial.css">
+  <style>
+    /* Estilos para a barra de topo */
+    .barra-topo-conteudo-pcr {
+      background-color: #007bff;
+      padding: 10px 0;
+      text-align: center;
+      width: 100%;
+      display: flex; /* Ativa o layout flexível */
+      justify-content: space-between; /* Distribui o espaço entre os elementos */
+      align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    .logo-container {
+      display: flex; /* Ativa o layout flexível para os itens dentro da div */
+      align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    .logo-container img {
+      width: 200px; /* Define a largura da imagem */
+    }
+
+    #divBusca {
+      display: flex; /* Ativa o layout flexível para os itens dentro da div */
+      align-items: center; /* Alinha os itens verticalmente */
+    }
+
+    #txtBusca {
+      background-color: rgb white;
+      padding: 8px 15px;
+      font-style: italic;
+      font-size: 18px;
+      border: navy;
+      height: 15px;
+      width: 100px;
+      border-radius: 20px;
+      margin-right: 10px; /* Adiciona um espaço entre o campo de busca e o botão */
+    }
+
+    #btnBusca {
+      background-color: #007bff;
+      border: none;
+      color: f#007bff;
+      padding: 8px 8px;
+      font-size: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    #btnBusca img {
+      width: 20px;
+      vertical-align: middle;
+    }
+
+    #btnBusca:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="barra-topo-conteudo-pcr">
+    <div class="logo-container">
+      <img src="logo-cttu.png" alt="logo cttu" onclick="openLink('https://cttu.recife.pe.gov.br')" style="width: 200px;">
+    </div>  
+    <div id="divBusca">
+      <input type="text" id="txtBusca" placeholder="Buscar..."/>
+      <button id="btnBusca" onclick="search()">
+        <img src="lupafull.webp" alt="Buscar">
+      </button>
+    </div>
+  </div>
+</body>
+</html>
